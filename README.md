@@ -1,4 +1,4 @@
-# Reddit AI Extension
+# AI Voice Assistant
 
 ## Overview
 
