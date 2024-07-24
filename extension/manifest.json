@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "AI assistant to a webpage",
+    "description": "Real time voice AI assistant. Reddit comments only for now.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "version": "1.0",
+    "action": {
+        "default_title": "Click to AI",
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.reddit.com/r/*/comments/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
